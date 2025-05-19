@@ -4,26 +4,25 @@
  */
 package loopsmatriz;
 
+import java.util.Scanner;
+
 /**
  *
  * @author CAMARGO
  */
-import java.util.Scanner;
-public class ex1 {
-      public static void main(String args[]) {
+public class ex11 {
+    public static void main(String args[]) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-        int[] n = new int[10];
-        
+        System.out.println("quantos vetores voce deseja?");
+        int variavel = entrada.nextInt();
+        int[] n = new int[variavel];
+        System.out.println("me diga um numero");
         for (int i = 0; i < n.length;i++)
         {
-            System.out.println("me diga um numero");
             n[i] = entrada.nextInt(); 
+            
+          
         }
-        
-        for(int j = 0; j <n.length; j ++)
-        {
-            System.out.println(n[j]);
-        }
-    } 
+    }   
 }

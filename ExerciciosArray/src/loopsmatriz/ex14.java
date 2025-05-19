@@ -4,26 +4,37 @@
  */
 package loopsmatriz;
 
+import java.util.Scanner;
+
 /**
  *
  * @author CAMARGO
  */
-import java.util.Scanner;
-public class ex1 {
-      public static void main(String args[]) {
+public class ex14 {
+    public static void main(String args[]) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
+        
         int[] n = new int[10];
         
+        System.out.println("me diga um numero");
         for (int i = 0; i < n.length;i++)
         {
-            System.out.println("me diga um numero");
-            n[i] = entrada.nextInt(); 
+            n[i] = entrada.nextInt();
+            
+          
+        }
+        for(int j = 0; j <n.length;j++)
+        {
+            if(n[j]<5)
+            {
+                n[j]=5;
+            }
         }
         
-        for(int j = 0; j <n.length; j ++)
+        for(int x = 0; x<n.length;x++)
         {
-            System.out.println(n[j]);
+            System.out.println("os valores sao "+n[x]);
         }
-    } 
+    }    
 }

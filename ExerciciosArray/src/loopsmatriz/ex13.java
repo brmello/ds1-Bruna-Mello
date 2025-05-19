@@ -4,26 +4,33 @@
  */
 package loopsmatriz;
 
+import java.util.Scanner;
+
 /**
  *
  * @author CAMARGO
  */
-import java.util.Scanner;
-public class ex1 {
-      public static void main(String args[]) {
+public class ex13 {
+    public static void main(String args[]) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
+        
         int[] n = new int[10];
         
+        System.out.println("me diga um numero");
         for (int i = 0; i < n.length;i++)
         {
-            System.out.println("me diga um numero");
-            n[i] = entrada.nextInt(); 
+            n[i] = entrada.nextInt();
+            
+          
         }
-        
-        for(int j = 0; j <n.length; j ++)
+        for (int e = 0; e < n.length; e++)
         {
-            System.out.println(n[j]);
+            if (n[e]%3 == 0)
+            {
+                System.out.println("o numero "+n[e]+" e multiplo de 3");
+                
+            }
         }
-    } 
+    }
 }
